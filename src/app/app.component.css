@@ -1,0 +1,29 @@
+#app {
+  /*font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;*/
+  
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 252px;
+  margin-right: 252px;
+}
+.mat-card.mat-success{
+    background-color: green;
+}
+span.text-white {
+    color: #fff!important;
+}
+.mat-body-1, .mat-body-2, body {
+    font-size: 18px;
+    letter-spacing: .01em;
+}
+ 
+audio, canvas, embed, iframe, img, object, video {
+    max-width: 100%;
+    font-style: italic;
+    vertical-align: middle;
+}
+
+
+

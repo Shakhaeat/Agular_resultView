@@ -1,0 +1,66 @@
+<div align="center">
+  <mat-card class = "mdl-grid" align="center">
+    <mat-card-title>
+      Please provide your Exam and corresponding Info <a routerLink="/">(App Home)</a>
+    </mat-card-title>
+    <br>
+    <br>
+    
+      <form #userForm="ngForm" class="example-form" (ngSubmit)="onSubmit(degree)">
+       <!--  {{ userForm.value | json }}
+        <br>
+        <br> -->
+        <mat-card-content>
+        <div>
+          <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Degree</mat-label>
+            <select matNativeControl required name="degree" ngModel>
+              <option value="" selected disabled>Choose One</option>
+              <option value="ssc">SSC</option>
+              <option value="hsc">HSC</option>
+              
+            </select>
+          </mat-form-field>
+        </div>
+
+        <div>
+          <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Year</mat-label>
+            <select matNativeControl required name="year" ngModel>
+              <option value="" selected disabled>Choose One</option>
+              <option value="2008">2008</option>
+              <option value="2009">2009</option>
+              
+            </select>
+          </mat-form-field>
+        </div>
+
+        <div>
+          <mat-form-field class="example-full-width" appearance="outline" hideRequiredMarker>
+            <mat-label>Board</mat-label>
+            <select matNativeControl required name="board" ngModel>
+              <option value="" selected disabled>Choose One</option>
+              <option value="dhaka">Dhaka</option>
+              <option value="cumilla">Cumilla</option>
+              
+            </select>
+          </mat-form-field>
+        </div>
+
+        <div>
+       	  <mat-form-field class="example-full-width" appearance="outline">
+      	  <mat-label>Roll</mat-label>
+          <input matInput type="number" name="roll" ngModel placeholder="Enter Your Roll" required />
+          </mat-form-field>
+        </div>
+    </mat-card-content>
+    <div align="center">
+      <mat-card-footer>
+        <button mat-raised-button>Get Result</button>
+      </mat-card-footer>
+    </div>
+
+
+    </form>
+  </mat-card>
+</div>
