@@ -25,13 +25,13 @@
   .mat-card-footer {
    
     margin-bottom: -17px;
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: rgba(0, 0, 0, 0.03);
     border-bottom: 1px solid rgba(0,0,0,.125);
     margin-left: -17px;
     margin-right: -17px;
     padding: 14px;
     font-size: 1rem;
-    width: 159%;
+    width: 158.7%;
   }
 
   .mat-card>:first-child, .mat-card-content>:first-child {

@@ -8,9 +8,11 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 //import { HomeComponent } from './home/home.component';
+import { HttpClientModule } from '@angular/common/http';
 
 import { MaterialModule } from './material/material.module';
 import { InfoComponent } from './info/info.component';
+import { ShowComponent } from './show/show.component';
 //import { MatButtonModule } from '@angular/material';
 // import { MatButtonModule } from '@angular/material/button';
 
@@ -19,13 +21,15 @@ import { InfoComponent } from './info/info.component';
     AppComponent,
     //HomeComponent
     routingComponents,
-    InfoComponent
+    InfoComponent,
+    ShowComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    HttpClientModule
     //FormsModule 
   ],
   providers: [],

@@ -6,7 +6,7 @@
     <br>
     <br>
     
-      <form #userForm="ngForm" class="example-form" (ngSubmit)="onSubmit(degree)">
+      <form #info = "ngForm" class="example-form" (ngSubmit)="onClickSubmit(info.value)" ngNativeValidate>
        <!--  {{ userForm.value | json }}
         <br>
         <br> -->
@@ -14,7 +14,7 @@
         <div>
           <mat-form-field class="example-full-width" appearance="outline">
             <mat-label>Degree</mat-label>
-            <select matNativeControl required name="degree" ngModel>
+            <select matNativeControl name="degree" ngModel required>
               <option value="" selected disabled>Choose One</option>
               <option value="ssc">SSC</option>
               <option value="hsc">HSC</option>
@@ -26,7 +26,7 @@
         <div>
           <mat-form-field class="example-full-width" appearance="outline">
             <mat-label>Year</mat-label>
-            <select matNativeControl required name="year" ngModel>
+            <select matNativeControl name="year" ngModel required>
               <option value="" selected disabled>Choose One</option>
               <option value="2008">2008</option>
               <option value="2009">2009</option>
@@ -36,9 +36,9 @@
         </div>
 
         <div>
-          <mat-form-field class="example-full-width" appearance="outline" hideRequiredMarker>
+          <mat-form-field class="example-full-width" appearance="outline">
             <mat-label>Board</mat-label>
-            <select matNativeControl required name="board" ngModel>
+            <select matNativeControl name="board" ngModel required>
               <option value="" selected disabled>Choose One</option>
               <option value="dhaka">Dhaka</option>
               <option value="cumilla">Cumilla</option>
@@ -48,8 +48,8 @@
         </div>
 
         <div>
-       	  <mat-form-field class="example-full-width" appearance="outline">
-      	  <mat-label>Roll</mat-label>
+          <mat-form-field class="example-full-width" appearance="outline">
+          <mat-label>Roll</mat-label>
           <input matInput type="number" name="roll" ngModel placeholder="Enter Your Roll" required />
           </mat-form-field>
         </div>
