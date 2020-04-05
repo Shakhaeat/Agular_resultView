@@ -11,8 +11,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 
 import { MaterialModule } from './material/material.module';
-import { InfoComponent } from './info/info.component';
-import { ShowComponent } from './show/show.component';
+// import { InfoComponent } from './info/info.component';
+// import { ShowComponent } from './show/show.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 //import { MatButtonModule } from '@angular/material';
 // import { MatButtonModule } from '@angular/material/button';
 
@@ -20,19 +22,20 @@ import { ShowComponent } from './show/show.component';
   declarations: [
     AppComponent,
     //HomeComponent
-    routingComponents,
-    InfoComponent,
-    ShowComponent
+    routingComponents
+    // InfoComponent,
+    // ShowComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    HttpClientModule
+    HttpClientModule,
+    FlexLayoutModule
     //FormsModule 
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

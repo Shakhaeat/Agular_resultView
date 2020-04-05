@@ -1,5 +1,5 @@
-<div align="center">
-  <mat-card class = "mdl-grid" align="center">
+<div fxLayoutAlign="center">
+  <mat-card class = "mdl-grid">
     <mat-card-title>
       Please provide your Exam and corresponding Info <a routerLink="/">(App Home)</a>
     </mat-card-title>
@@ -7,9 +7,9 @@
     <br>
     
       <form #info = "ngForm" class="example-form" (ngSubmit)="onClickSubmit(info.value)" ngNativeValidate>
-       <!--  {{ userForm.value | json }}
+       <!--  {{ info.value | json }} -->
         <br>
-        <br> -->
+        <br>
         <mat-card-content>
         <div>
           <mat-form-field class="example-full-width" appearance="outline">

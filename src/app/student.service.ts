@@ -10,7 +10,7 @@ import { throwError } from 'rxjs';
 export class StudentService {
 
   //base api url
-  public url = 'http://localhost/assignment/';
+  public url = 'http://nixdev1.xhost.name/';//http://nixdev1.xhost.name/
   constructor(private http: HttpClient) { }
 
   getResult(degree, year, board, roll){

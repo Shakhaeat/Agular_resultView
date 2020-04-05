@@ -1,9 +1,10 @@
 .mdl-grid {
-    width: 500px;
-    margin: 4px;
+    min-width: 37%;
     display: inline-block;
     vertical-align: top;
     text-align: left;
+    margin-left: 6%;
+    margin-right: 6%;
   }
   .mat-card-title {
     padding: .75rem 1.25rem;
@@ -19,7 +20,7 @@
 }
 
   .mat-raised-button {
-    min-width: 449px;
+    min-width: 94%;
     height: 36px;
     margin: 6px 8px;
     border-radius: 2px;

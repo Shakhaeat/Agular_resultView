@@ -1,8 +1,8 @@
-/*.table td, .table th {
+.table td, .table th {
     padding: .25rem;
     vertical-align: top;
     border-top: 1px solid #dee2e6;
-}*/
+}
 
 .table td {
     border: 1px solid #dddddd;
@@ -10,7 +10,7 @@
     padding: .4rem;
     vertical-align: top;
     border-top: 1px solid #dee2e6;
-    width: 40%;
+    width: 50%;
 }
 .table th {
     font-weight: bold;
@@ -19,7 +19,7 @@
     padding: .4rem;
     vertical-align: top;
     border-top: 1px solid #dee2e6;
-    width: 40%;
+    width: 50%;
 }
 
 .card {
@@ -28,12 +28,11 @@
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
-    min-width: 0;
+    max-width: 80%;
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
     border: 1px solid rgba(0,0,0,.125);
     border-radius: .25rem;
-    width: 70%;
-    margin-left: 140px;
+    
 }

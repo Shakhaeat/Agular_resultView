@@ -14,7 +14,8 @@ export class ShowComponent implements OnInit {
     public board : any;
     public roll : any;
     studentData: any;
-    errorMessage: string = "Loading......";
+   // studentData: any[] = [];
+    errorMessage: string = "Result of your specified criteria is not found. Please check and try again..";
     
   constructor(
     private route: ActivatedRoute,
@@ -32,18 +33,20 @@ export class ShowComponent implements OnInit {
   loadGetResult(degree, year, board, roll){
     this.stuentService.getResult(degree, year, board, roll).subscribe(student => {
       this.studentData = student;
+      //this.studentData = this.studentData.concat([student]);
       this.showSpinner = false;
+      //console.log(this.studentData);
         // setTimeout(() => {
         // 	this.showSpinner = false;
         // }, 40);
       console.log(this.studentData);
     }, (err)=>{
-        this.errorMessage = "Result of your specified criteria is not found. Please check and try again.."
+       // this.errorMessage = "Result of your specified criteria is not found. Please check and try again.."
     });
 
     setTimeout(() => {
       this.showSpinner = false;
-    }, 400);
+    }, 700);
 
     
   }
@@ -54,5 +57,6 @@ export class ShowComponent implements OnInit {
   //   	this.showSpinner = false;
   //   }, 470);
   // }
-
+  displayedColumns: string[] = ['roll_id', 'std_name', 'father_name', 'mother_name'];
+   
 }

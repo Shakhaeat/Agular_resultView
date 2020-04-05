@@ -1,0 +1,88 @@
+/*.table td, .table th {
+    padding: .25rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}*/
+
+/*.table td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: .4rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+    width: 50%;
+}
+.table th {
+    font-weight: bold;
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: .4rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+    width: 50%;
+}
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    width: 80%;
+    margin-left: 100px;
+}*/
+
+/* Structure */
+.example-container {
+  position: relative;
+  min-height: 200px;
+  width: 70%;
+  /*align-content: center;
+  margin-left: 200px;
+  margin-right: 200px;*/
+}
+
+.example-table-container {
+  position: relative;
+  max-height: 400px;
+  overflow: auto;
+}
+
+table {
+  width: 40%;
+}
+
+.example-loading-shade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 56px;
+  right: 0;
+  background: rgba(0, 0, 0, 0.15);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.example-rate-limit-reached {
+  color: #980000;
+  max-width: 360px;
+  text-align: center;
+}
+
+/* Column Widths */
+.mat-column-number,
+.mat-column-state {
+  max-width: 64px;
+}
+
+.mat-column-created {
+  max-width: 124px;
+}
